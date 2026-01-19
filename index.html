@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>cose che amo di Alessandro Manuel Mirandola</title>
+  <style> 
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;          
+      background-color: #ff69b4;
+    }
+
+    h1 {
+      color: #000000;
+      margin-bottom: 40px;         
+    }
+
+    #fissa {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 30px;        
+    }
+
+    button {
+      padding: 5px 10px;           
+      margin: 20px auto;           
+      display: block;              
+      background-color: #ff1493;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff69b4;
+    }
+
+    #output {
+      margin-top: 30px;
+      font-size: 20px;
+      color: #000000;
+    }
+  </style>
+  
+</head>
+<body>
+
+<h1>cose che amo di Alessandro Manuel Mirandola</h1>
+<p id=fissa"> amo...
+
+<button onclick="generaFrase()">!!!</button>
+
+<p id="output"></p>
+
+<script>
+  const frasi = [
+    "i tuoi capelli rossi",
+    "le tue lentiggini sparse sul tuo volto, le tue spalle, la tua schiena, le tue braccia e le tue mani",
+    "i tuoi occhi, si capisce tutto quello che hai vissuto e amo come sei diventato superando tutto",
+    "la tua pacatezza",
+    "il tuo sorriso",
+    "la melodia della tua risata sincera",
+    "come ti prendi cura di me",
+    "le tue braccia e i tuoi avambracci",
+    "le tua mani, così angeliche e lentigginose",
+    "le tue cosce e i tuoi polpacci",
+    "come ti si illuminano gli occhi quando parli di motori, meccanica, console, videogiochi e tutto quello che ti appassiona",
+    "la tua pazienza",
+    "il tuo umorismo",
+    "il tuo altruismo",
+    "la tua mente e il tuo modo di ragionare. anche se non lo vuoi capire, hai un cervello fantastico",
+    "la tua delicatezza",
+    "il tuo modo di tirarmi su e ascoltarmi",
+    "la tua curiosità",
+    "la tua maturità",
+    "come presti attenzione alle piccole cose",
+    "come mi sproni a fare le cose",
+    "i tuoi gusti musicali nonostante siano per lo più diversi dai miei",
+    "l'impegno metti nelle cose che ti piacciono, e no non sei stpido solo se ti impegni in quelle cose e non in altro. è normale",
+    "l'emozione che provi per le cose di cui sei contento. come mi ripeti quello che è successo tutto felice e mi fai taptap sul corpo per esternare l'emozione",
+    "quando mi tocchi il volto e la pancia",
+    "quando mi dici che sono carina  dopo averti raccontato cose random sui dinosauri o cose simili",
+    "quando scherzi con i miei parenti e amici",
+    "quando dici cose super random o nonsense che mi fanno morire dal ridere",
+    "quando parli con i miei fratelli",
+    "la tua pazienza con me, so di essere difficile e ti ringrazio per essere ancora con me",
+    "il fatto che sia quando siamo soli che quando siamo in compagnia mi tratti allo stesso modo",
+    "tutto te",
+    "la tua voglia di sentirmi e vedermi sempre",
+    "la tua maglietta blu con cui dormi a casa mia, ma ancora di più quella di Tazz che indossavi la prima volta che ci siamo visti. ti sta da dio (no fr ti sta benissimo) e mi ricorda uno dei giorni più belli e speciali della mia vita",
+    "come sei sinceramente te stesso con me",
+    "come sei stato spontaneo quando ci siamo conosciuti",
+    "vederti così emozionato quando passiamo un altro mese insieme",
+    "il fatto che mi ami come il primo giorno anche ora, a distanza di mesi, come se fossi ancora una novità da vivere",
+    "quando mi dici che mi hai pensata per aver visto/ascoltato qualcosa che ti ricorda me",
+    "i tuoi modi di fare",
+    "quando parli del nostro futuro insieme",
+    "quando facciamo cose carine, come avere i pantaloni di hello kitty matchati",
+    "anche quando piangi con me. non perché mi piace vederti triste ovviamente, ma perché mi fa capire quanto ti fidi di me e quanto ti senti al sicuro",
+    
+  ];
+
+  function generaFrase() {
+    const numeroCasuale = Math.floor(Math.random() * frasi.length);
+    document.getElementById("output").textContent = frasi[numeroCasuale];
+  }
+</script>
+
+</body>
+</html>
